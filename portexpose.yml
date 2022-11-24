@@ -1,0 +1,10 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: portpod
+spec:
+  containers:
+    - name: container5
+      image: httpd
+      ports:
+       - containerPort: 80

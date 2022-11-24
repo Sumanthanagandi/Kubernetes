@@ -1,0 +1,21 @@
+kind: ReplicationController               
+apiVersion: v1
+metadata:
+  name: myreplica
+spec:
+  replicas: 3            
+  selector:        
+    myname: Sumant                            
+  template:                
+    metadata:
+      name: pod1
+      labels:            
+        myname: Sumant
+    spec:
+     containers:
+       - name: container1
+         image: ubuntu
+         command: ["/bin/bash", "-c", "while true; do echo Hello Sumant; sleep 5 ; done"]
+       - name: container2
+         image: ubuntu
+         command: ["/bin/bash", "-c", "while true; do echo Good afternoon; sleep 5 ; done"]

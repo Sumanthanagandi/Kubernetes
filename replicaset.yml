@@ -1,0 +1,19 @@
+kind: ReplicaSet                                    
+apiVersion: apps/v1                            
+metadata:
+  name: myrs
+spec:
+  replicas: 2  
+  selector:                  
+    matchExpressions:                             # these must match the labels
+      - {key: myname, operator: In, values: [Sumant, Sumanth]}
+  template:      
+    metadata:
+      name: rspod
+      labels:              
+        myname: Sumant
+    spec:
+     containers:
+       - name: container1
+         image: ubuntu
+         command: ["/bin/bash", "-c", "while true; do echo Technical-Guftgu; sleep 5 ; done"]
