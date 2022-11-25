@@ -16,4 +16,4 @@ spec:
      containers:
        - name: container1
          image: ubuntu
-         command: ["/bin/bash", "-c", "while true; do echo Technical-Guftgu; sleep 5 ; done"]
+         command: ["/bin/bash", "-c", "while true; do echo Hello, Sumant; sleep 5 ; done"]
