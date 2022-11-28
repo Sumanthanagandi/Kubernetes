@@ -6,7 +6,7 @@ spec:
   containers:
   - name: resource
     image: centos
-    command: ["/bin/bash", "-c", "while true; do echo Technical-Guftgu; sleep 5 ; done"]
+    command: ["/bin/bash", "-c", "while true; do echo Hello, Sumant; sleep 5 ; done"]
     resources:                                          
       requests:
         memory: "64Mi"
