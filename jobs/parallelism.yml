@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: testjob
+spec:
+  parallelism: 5                           # Runs for pods in parallel
+  activeDeadlineSeconds: 10                # job gets deleted after 10 secs after container terminates
+  template:
+    metadata:
+      name: testjob
+    spec:
+      containers:
+      - name: counter
+        image: centos:7
+        command: ["bin/bash", "-c", "echo Hello, Sumant; sleep 20"]        #container terminates after 20 seconds
+      restartPolicy: Never

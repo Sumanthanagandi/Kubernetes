@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: LimitRange                        #Limitrange is an object.
+metadata:
+  name: mem-min-max-demo-lr
+spec:
+  limits:
+  - max:      
+      memory: 1Gi                       #memory is mentioned, cpu not mentioned
+    min:
+      memory: 500Mi
+    type: Container
