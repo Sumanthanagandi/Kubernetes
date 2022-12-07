@@ -3,7 +3,7 @@ apiVersion: apps/v1
 metadata:
    name: mydeployments
 spec:
-   replicas: 3
+   replicas: 2
    selector:     
     matchLabels:
      name: deployment
@@ -15,5 +15,5 @@ spec:
      spec:
       containers:
         - name: container1
-          image: ubuntu
-          command: ["/bin/bash", "-c", "while true; do echo Hello, Sumant. Hope you are doing fine; sleep 5; done"]
+          image: centos 
+          command: ["/bin/bash", "-c", "while true; do echo Hello, Sumant.; sleep 5; done"]

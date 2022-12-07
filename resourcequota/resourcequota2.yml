@@ -7,5 +7,5 @@ spec:
   - name: default-cpu-demo-3-ctr
     image: nginx
     resources:
-      requests:                       #requests mentioned but limits not mentioned, hence limit will be equal to 1.
+      requests:    #requests mentioned but limits not mentioned, hence limit will be equal to 1.
         cpu: "0.75"

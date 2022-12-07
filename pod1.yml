@@ -3,7 +3,7 @@ apiVersion: v1
 metadata:                           
   name: firstpod
   annotations: 
-      description: My first test pod.                
+    description: My first test pod.                     
 spec:                                    
   containers:                      
     - name: container1                     
