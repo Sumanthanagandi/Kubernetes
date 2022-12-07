@@ -10,6 +10,6 @@ spec:
        spec:
          containers:
          - image: ubuntu
-           name: bhupi
+           name: sumant
            command: ["/bin/bash", "-c", "echo Hello, Sumant; sleep 5"]
          restartPolicy: Never
