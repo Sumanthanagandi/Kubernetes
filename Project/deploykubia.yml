@@ -15,6 +15,6 @@ spec:
      spec:
       containers:
         - name: container1
-          image: httpd
+          image: sumanthanagandi/kubeproject
           ports:
-           - containerPort: 80
+           - containerPort: 8080
